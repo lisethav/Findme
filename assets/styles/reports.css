@@ -1,0 +1,21 @@
+.text-principal-guide{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list-reports{
+    padding:20px; 
+}
+
+.card-report{
+    margin: 10px;
+}
+
+.list-reports .card-report img{
+    height: 220px;
+}
+
+.list-reports .card-text{
+    max-height: 200px;
+    overflow: auto;
+}
