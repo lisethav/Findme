@@ -6,7 +6,7 @@ body{
 .card-panel-login{
     width: 400px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .card-panel-login .card-title{
@@ -25,13 +25,12 @@ body{
 .card-panel-login .btn:hover{
     width: 300px;
 }
-
-.btn-register{
+ .btn-login {
 	color: #817a7a;
     text-decoration: none;
-}
+ }
 
-.btn-register:hover{
+.btn-login:hover{
     color: #dc48f5 !important;
     cursor: pointer;
     font-weight: 600;

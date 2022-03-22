@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/login.css">
 
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -21,11 +26,11 @@
 <body ng-app="application" ng-controller="controller_login">
 
 
-    <div id="preloader_main" ng-show="queue_request > 0">
+    <!-- <div id="preloader_main" ng-show="queue_request > 0">
         <div class="container-preloader">
             <img src="../../assets/images/gif/loader1.gif" alt="">
         </div>
-    </div>
+    </div> -->
 
     
     <div class="card card-panel-login">
@@ -49,8 +54,8 @@
                 <a href="" class="btn btn-primary" ng-click="check_login()">Iniciar sesión</a>
             </div>
 
-            <div class="text-center btn-register">
-                Regístrate
+            <div class="text-center">
+				<a class="btn-register" href="register">Regístrate</a>
             </div>
         </div>
       </div>

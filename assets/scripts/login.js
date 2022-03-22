@@ -16,7 +16,7 @@ angular.module("application").config(function($httpProvider){
 angular.module("application").controller("controller_login", function($scope, $http, $timeout){
 
 
-  $scope.txt_user = "aa";
+  $scope.txt_user = "";
   $scope.txt_password = "";
   $scope.txt_err_login = "";
   $scope.queue_request = 0;
@@ -51,16 +51,15 @@ angular.module("application").controller("controller_login", function($scope, $h
 
 
   $scope.check_login = function(){
-    console.log("executing");
     if(!$scope.validate_login()){
       return;
     }
 
-    $scope.queue_request++;
+  //  $scope.queue_request++;
 
     $http({
       method: "post",
-      url : BASE_URL + "ajax_admin/login/check_login",
+      url : "../login/do_login",
       data : {
         user : $scope.txt_user,
         password : $scope.txt_password
@@ -68,23 +67,15 @@ angular.module("application").controller("controller_login", function($scope, $h
     })
     .then(function(response){
 
-        $scope.queue_request--;
-
-        if(response.data.status == undefined){
-          $scope.txt_err_login = "Error al intentar conectarse";
-          return;
-        }
-        else if(response.data.status == "0"){
-          $scope.txt_err_login = response.data.data;
-          return;
-        }
-        else if(response.data.status == "1"){
-
-            window.location.href = BASE_URL + "admin/page/profile";
-          return;
-        }
-
+		if(response.data.status == "error"){
+		  $scope.txt_err_login = response.data.message;
+		  return;
+	  }
+	  window.location.href="reports";
     });
+
+
+
 
 
   };
