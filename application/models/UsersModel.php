@@ -9,4 +9,10 @@ class UsersModel extends CI_Model {
 		$users = $result->result_array();
 		return $users;
 	}
+
+	public function create_user($name, $lastname){
+		$this->load->database("findme");
+		$result = $this->db->query("insert into users (name, last_name) values ('$name', '$lastname')");
+		return true;
+	}
 }
