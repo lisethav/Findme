@@ -20,4 +20,10 @@ class Register extends CI_Controller {
 		die(json_encode( array( "status"=>"ok" ) ));
 	}
 	
+	public function get_users()
+	{
+		$this->load->model("RegisterModel");
+		$users = $this->RegisterModel->get_users();
+		die (json_encode($users));
+	}
 }

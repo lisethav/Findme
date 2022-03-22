@@ -62,7 +62,7 @@ angular.module("application").controller("controller_login", function($scope, $h
       url : "../login/do_login",
       data : {
         user : $scope.txt_user,
-        password : $scope.txt_password
+        password1 : $scope.txt_password
       }
     })
     .then(function(response){
