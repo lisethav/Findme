@@ -16,9 +16,9 @@ angular.module("application").config(function($httpProvider){
 angular.module("application").controller("controller_register", function($scope, $http, $timeout){
 
 
-  $scope.txt_user = "";
-  $scope.txt_first_name = "";
-  $scope.txt_last_name = "";
+  $scope.txt_lost_date = "";
+  $scope.txt_lost_address = "";
+  $scope.txt_ = "";
   $scope.txt_cellphone = "";
   $scope.txt_password1 = "";
   $scope.txt_password2 = "";
@@ -53,7 +53,7 @@ angular.module("application").controller("controller_register", function($scope,
 		$scope.txt_err_register = "Debes ingresar un apellido válido";
 		return false;
 	}
-	if($scope.txt_cellphone.length != 10){
+	if($scope.txt_cellphone.length < 1 || $scope.txt_cellphone.length > 10){
 		$scope.txt_err_register = "Debes ingresar un teléfono válido";
 		return false;
 	}
@@ -100,9 +100,7 @@ angular.module("application").controller("controller_register", function($scope,
 	  window.location.href="reports";
     });
 
-
   };
-
 
 
 });
