@@ -27,9 +27,9 @@
 
     <div class="card card-panel-login">
         <a class="logo-brand">
-            <img src="../../assets/images/logo_findme.png" width="100" height="50" alt="">
+            <img src="../../assets/images/logo_findme.png" width="110" height="65" alt="">
         </a>
-        <h4 class="card-title text-center">Crear reporte de mascota</h4>
+        <h4 class="card-title text-center">Encuentra tu mascota</h4>
         <div class="card-body">
         <form>
         <div class="form-group">
@@ -42,7 +42,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Nombre mascota</label>
-            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Gris, café, blanco...">
+            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Kyara, Rufus...">
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Raza</label>
@@ -98,7 +98,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Detalles adicionales:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Tenía collar azul..."></textarea>
         </div>
         <div class="form-group">
             <label for="exampleFormControlFile1">Foto mascota</label>
@@ -106,10 +106,6 @@
             <input type="file" class="form-control-file" id="exampleFormControlFile2">
         </div>
         </form>
-
-            <div class="alert alert-danger" ng-if="txt_err_register" role="alert">
-                {{txt_err_register}}
-            </div>
 
             <div class="text-center">
                 <a href="" class="btn btn-primary" ng-click="check_login()">Crear reporte</a>
