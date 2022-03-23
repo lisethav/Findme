@@ -21,42 +21,30 @@
 
 </head>
 <body ng-app="application" ng-controller="mainController">
-
-
-    <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">PetFind</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto navbar-right my-2 my-lg-0 navbar-nav-scroll" >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="reports">Inicio</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
-              </li>
-            </ul>
-
-            <form class="d-flex">
-                <a href="login" type="button" class="btn btn-primary">Iniciar sesión</a>
-            </form>
-
-          </div>
-        </div>
-    </nav>
-
-
-    <div class="wrapper-main-content">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffe8e8;">
+  <a class="navbar-brand" href="#">
+      <img src="../../assets/images/logo_findme.png" style="margin-left: 50px" width="150" height="75" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" style="margin-left: 50px">
+        <a class="nav-link" href="#">Inicio </span></a>
+      </li>
+      <li class="nav-item" style="margin-left: 50px">
+        <a class="nav-link" href="#">Sobre nosotros</a>
+      </li>
+      <li class="nav-item" style="margin-left: 50px">
+        <a class="nav-link" href="#">Zonas</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="nav justify-content-end">
+      <button type="button" style="margin-right: 50px" class="btn btn-danger">Crear reporte</button>
+      <button type="button" style="margin-right: 50px" class="btn btn-light">Iniciar sesión</button>
+  </ul>
+</nav>
+</body>
+</html>
