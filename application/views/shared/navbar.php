@@ -37,7 +37,7 @@
         <a class="nav-link" href="#">Sobre nosotros</a>
       </li>
       <li class="nav-item" style="margin-left: 50px">
-        <a class="nav-link" href="#">Zonas</a>
+        <a class="nav-link" href="#">Mascotas perdidas</a>
       </li>
     </ul>
   </div>
