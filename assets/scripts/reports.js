@@ -1,29 +1,20 @@
-angular.module("application",[]);
+angular.module("application").controller("controller_reports", function($scope, $http, $timeout){
 
-angular.module("application").config(function($httpProvider){
-
-  $httpProvider.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded; charset=UTF-8";
-
-  $httpProvider.defaults.transformRequest = function(data){
-      if (data === undefined) {
-          return data;
-      }
-      return $.param(data);
-  };
-
-});
-
-angular.module("application").controller("controller_register", function($scope, $http, $timeout){
-
-
-  $scope.txt_lost_date = "";
+  $scope.txt_cities_id = "";
   $scope.txt_lost_address = "";
-  $scope.txt_ = "";
-  $scope.txt_cellphone = "";
-  $scope.txt_password1 = "";
-  $scope.txt_password2 = "";
-  $scope.txt_err_register = "";
+  $scope.txt_lost_date = "";
+  $scope.txt_name = "";
+  $scope.txt_type_pet_id = "";
+  $scope.txt_breed = "";
+  $scope.txt_color = "";
+  $scope.txt_size_pet_id = "";
+  $scope.txt_cellphone1 = "";
+  $scope.txt_cellphone2 = "";
+  $scope.txt_reward = "";
+  $scope.txt_status_id = "";
+  $scope.txt_err_report = "";
   $scope.queue_request = 0;
+  $scope.list_cities = []
 
 
   $scope.key_check_login = function(event){
@@ -36,10 +27,10 @@ angular.module("application").controller("controller_register", function($scope,
   };
 
 
-  $scope.validate_register = function(){
+  $scope.validate_report = function(){
 
 
-    $scope.txt_err_register = "";
+    $scope.txt_err_report = "";
 
     if($scope.txt_user.length < 1 || $scope.txt_user.length > 50){
       $scope.txt_err_register = "Debes ingresar un correo electrónico válido";
@@ -73,11 +64,6 @@ angular.module("application").controller("controller_register", function($scope,
   };
 
 
-  $scope.check_login = function(){
-    if(!$scope.validate_register()){
-      return;
-    }
-
   //  $scope.queue_request++;
 
     $http({
@@ -99,8 +85,22 @@ angular.module("application").controller("controller_register", function($scope,
 	  }
 	  window.location.href="reports";
     });
-
   };
 
 
+  $scope.get_cities = function(){
+	  console.log("obteniendo ciudades")
+	  $http({
+		method: "get",
+		url : "../reports/get_cities",
+		data : {
+		}
+	  })
+	  .then(function(response){
+		  $scope.list_cities = response.data
+       console.log(response);
+	  });
+  }
+
+  $scope.get_cities();
 });
