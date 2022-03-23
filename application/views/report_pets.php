@@ -27,7 +27,7 @@
 
     <div class="card card-panel-login">
         <a class="logo-brand">
-            <img src="../../assets/images/logo_findme.png" width="110" height="65" alt="">
+            <img src="../../assets/images/logo_findme.png" width="110" height="65">
         </a>
         <h4 class="card-title text-center">Encuentra tu mascota</h4>
         <div class="card-body">

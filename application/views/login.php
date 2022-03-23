@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petfind</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/login.css">
+    <link rel="stylesheet" href="../../assets/styles/register.css">
 
 	<script
   src="https://code.jquery.com/jquery-3.6.0.js"
@@ -55,7 +55,7 @@
             </div>
 
             <div class="text-center">
-				<a class="btn-register" href="register">Regístrate</a>
+				<a class="btn-login" href="register.php">Regístrate</a>
             </div>
         </div>
       </div>
