@@ -1,93 +1,105 @@
-<link rel="stylesheet" href="../../assets/styles/reports.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMe - Reportes</title>
+    <link rel="stylesheet" href="../../assets/styles/reports.css">
+</head>
+<body>
+    <main id="main" class="main">
 
-<div class="text-principal-guide">
-    <h2>Selecciona la ciudad donde te encuentras</h2>
+        <div class="text-principal-guide">
+            <h2>Selecciona la ciudad donde te encuentras</h2>
 
-    <div>
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Todos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Medellín</a></li>
-                <li><a class="dropdown-item" href="#">Sabaneta</a></li>
-                <li><a class="dropdown-item" href="#">Envigado</a></li>
-            </ul>
-            </div>
-    </div>
-</div>
-
-
-
-<div class="modal" id="modal_detalle" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <p>Modal body text goes here.</p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="list-reports">
-
-
-    <div class="container-fluid">
-        <div class="row">
-
-            <div class="col">
-                <div class="card card-report" style="width: 18rem;">
-                    <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lulu</h5>
-                        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
-                        <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+            <div>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Todos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Medellín</a></li>
+                        <li><a class="dropdown-item" href="#">Sabaneta</a></li>
+                        <li><a class="dropdown-item" href="#">Envigado</a></li>
+                    </ul>
                     </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal" id="modal_detalle" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card card-report" style="width: 18rem;">
-                    <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lulu</h5>
-                        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
-                        <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+        </div>
+
+
+        <div class="list-reports">
+
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col">
+                        <div class="card card-report" style="width: 18rem;">
+                            <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lulu</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
+                                <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-report" style="width: 18rem;">
-                    <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lulu</h5>
-                        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
-                        <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+                    <div class="col">
+                        <div class="card card-report" style="width: 18rem;">
+                            <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lulu</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
+                                <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-report" style="width: 18rem;">
-                    <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lulu</h5>
-                        <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
-                        <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+                    <div class="col">
+                        <div class="card card-report" style="width: 18rem;">
+                            <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lulu</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
+                                <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col">
+                        <div class="card card-report" style="width: 18rem;">
+                            <img src="../../assets/images/pets/1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lulu</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci molestias quo consequatur voluptas nam, eius accusantium eveniet cumque doloribus tenetur aliquam est officia excepturi numquam vitae odio, mollitia ut provident? </p>
+                                <a href="#" class="btn btn-primary" id="detalle_lulu">Ver detalle</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
 
         </div>
-
-    </div>
-
-</div>
-    
+    </main><!-- End #main -->    
+</body>
+</html>    
