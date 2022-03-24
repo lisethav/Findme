@@ -47,12 +47,13 @@
 </head>
 
 <body>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center" style="background-color: #ffe8e8;">
+  <header id="header" class="header fixed-top d-flex align-items-center" style="background-color: #ffe8e8">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="home.php" class="logo d-flex align-items-center">
-        <img src="../../assets/images/logo_findme.png" width="70" height="50" alt="logo">
+      <a href="index.html" class="logo d-flex align-items-center">
+      <img src="../../assets/images/logo_findme.png" width="70" height="50" alt="logo">
         <span class="d-none d-lg-block">FindMe</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -88,15 +89,29 @@
             <li>
               <hr class="dropdown-divider">
             </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li class="dropdown-footer">
               <a href="profile.php">Ver todas las notificaciones</a>
             </li>
 
           </ul><!-- End Notification Dropdown Items -->
 
+        </li><!-- End Notification Nav -->
+
         <li class="nav-item dropdown pe-3">
 
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="profile.php" data-bs-toggle="dropdown">
             <img src="../../assets/images/profile.png" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">Usuario</span>
           </a><!-- End Profile Iamge Icon -->
@@ -145,21 +160,20 @@
           <i class="bi bi-grid"></i>
           <span>Inicio</span>
         </a>
-      </li><!-- End Home Nav -->
 
-      <li class="nav-item">
+        <li class="nav-item">
         <a class="nav-link collapsed" href="about.php">
           <i class="bi bi-grid"></i>
           <span>Sobre nosotros</span>
         </a>
-      </li><!-- End About Nav -->
 
-      <li class="nav-item">
+        <li class="nav-item">
         <a class="nav-link collapsed" href="reports.php">
           <i class="bi bi-grid"></i>
           <span>Mascotas perdidas</span>
         </a>
-      </li><!-- End Pets Lost Nav -->
+
+      </li><!-- End Dashboard Nav -->
 
       <li class="nav-heading">Pages</li>
 
@@ -186,7 +200,7 @@
 
     </ul>
 
-      </aside><!-- End Sidebar-->
+  </aside><!-- End Sidebar-->
 
 <!-- Template Main JS File -->
 <script src="../../assets/scripts/main2.js"></script>
