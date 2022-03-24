@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petfind</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/register.css">
+    <link rel="stylesheet" href="../../assets/styles/register.css">
 
 	<script
   src="https://code.jquery.com/jquery-3.6.0.js"
@@ -34,6 +34,9 @@
 
     
     <div class="card card-panel-login">
+        <a class="logo-brand">
+            <img src="../../assets/images/logo_findme.png" width="110" height="65" alt="">
+        </a>
         <h4 class="card-title text-center">Registrarse</h4>
         <div class="card-body">
             <div class="mb-3">

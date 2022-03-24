@@ -19,7 +19,7 @@ public function page($name_module = "login", $additional_content = null){
 
 	public function module($name_module = 'home')
 	{
-		$single_pages = array("login","logout", "register");
+		$single_pages = array("login","logout", "register", "report_pets");
 
 		// $this->load->model("admin/users_model");
 	

@@ -26,13 +26,13 @@ body{
     width: 300px;
 }
 
-.btn-register{
+.btn-login{
 	color: #817a7a;
     text-decoration: none;
 }
 
-.btn-register:hover{
-    color: #dc48f5 !important;
+.btn-login:hover{
+    color: #ef7a6e !important;
     cursor: pointer;
     font-weight: 600;
 }
