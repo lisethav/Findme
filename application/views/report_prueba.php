@@ -19,12 +19,18 @@
 				  </div>
 				  <div class="mb-3">
 					<label for="exampleFormControlTextarea1" class="form-label">Dirección donde se perdió</label>
-					<input ng-model="txt_first_name" type="text" maxlength="20" class="form-control">
+					<input ng-model="txt_lost_address" type="text" maxlength="20" class="form-control">
 				</div>
 				<div class="mb-3">
-					<label for="exampleFormControlTextarea1" class="form-label">Fecha </label>
+					<label for="exampleFormControlTextarea1" class="form-label">name </label>
 					<input ng-model="txt_last_name" type="text" maxlength="20" class="form-control">
 				</div>
+				<div class="form-group">
+						<label for="exampleFormControlInput1" class="form-label">size</label>
+						<select ng-model="txt_size_pet_id" class="form-control">
+							<option value={{size.size_pet_id}} ng-repeat="size in list_size">{{size.size}}</option>
+						</select>
+					</div>
 				<div class="mb-3">
 					<label for="exampleFormControlTextarea1" class="form-label">Celular</label>
 					<input ng-model="txt_cellphone" type="text" maxlength="10" class="form-control">
@@ -39,12 +45,12 @@
 				</div>
 	
 	
-				<div class="alert alert-danger" ng-if="txt_err_register" role="alert">
-					{{txt_err_register}}
+				<div class="alert alert-danger" ng-if="txt_err_report" role="alert">
+					{{txt_err_report}}
 				</div>
 	
 				<div class="text-center">
-					<a href="" class="btn btn-primary" ng-click="check_login()">Registrarse</a>
+					<a href="" class="btn btn-primary" ng-click="check_report()">Reportar mascota</a>
 				</div>
 	
 				<div class="text-center">
