@@ -8,6 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/styles/register.css">
 
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">	
+	
 	<script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -34,10 +39,10 @@
 
     
     <div class="card card-panel-login">
-        <a class="logo-brand">
-            <img src="../../assets/images/logo_findme.png" width="110" height="65" alt="">
-        </a>
-        <h4 class="card-title text-center">Registrarse</h4>
+		<div class="color-form-head" >
+			<h4 class="card-title text-center">Regístrate</h4>
+
+		</div>
         <div class="card-body">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>

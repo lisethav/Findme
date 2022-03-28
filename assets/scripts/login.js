@@ -71,15 +71,10 @@ angular.module("application").controller("controller_login", function($scope, $h
 		  $scope.txt_err_login = response.data.message;
 		  return;
 	  }
-	  window.location.href="reports";
+	  window.location.href="home";
     });
 
-
-
-
-
   };
-
 
 
 });

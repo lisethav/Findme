@@ -2,19 +2,26 @@ body{
     background-color: #ffe8e8;
 }
 
+.color-form-head{
+	background: linear-gradient(70deg, #ef7a6e, #5469a5);
+	width: auto;
+}
+
 .logo-brand{
     margin-top: 20px;
     align-self: center;
 }
 
 .card-panel-login{
-    width: 400px;
+    width: 500px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 98px;
 }
 
 .card-panel-login .card-title{
     padding: 30px;
+	color: white;
+	font-size: 22px;
 }
 .card-panel-login .btn{
     background: linear-gradient(70deg, #ef7a6e, #5469a5);
@@ -38,4 +45,12 @@ body{
     color: #dc48f5 !important;
     cursor: pointer;
     font-weight: 600;
+}
+
+.form-control {
+	margin: 0;
+    margin-block-end: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }

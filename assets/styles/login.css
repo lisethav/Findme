@@ -1,19 +1,26 @@
 body{
-    background-color: #59b3e0;
+    background-color: #ffe8e8;
 }
 
+.color-form-head{
+	background: linear-gradient(70deg, #ef7a6e, #5469a5);
+}
 
 .card-panel-login{
     width: 400px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 150px;
 }
+
 
 .card-panel-login .card-title{
     padding: 30px;
+	color: white;
+	font-size: 22px;
 }
+
 .card-panel-login .btn{
-    background: linear-gradient(70deg, #6ecade, #dc48f5);
+    background: linear-gradient(70deg, #ef7a6e, #5469a5);
     border-color: transparent !important;
     font-size: 22px;
     border-radius: 25px;

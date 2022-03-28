@@ -19,3 +19,45 @@
     max-height: 200px;
     overflow: auto;
 }
+
+.jumbotron .display-4 {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.btn-pretty{
+    background: linear-gradient(70deg, #ef7a6e, #5469a5);
+    border-color: transparent !important;
+    font-size: 22px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    width: 200px;
+}
+.btn-pretty:hover{
+    width: 300px;
+}
+
+.dropdown-item{
+	cursor: pointer;
+}
+
+.col .card-title{
+	font-size: 25px;
+}
+
+#detalle_pet {
+	background: linear-gradient(70deg, #ef7a6e, #5469a5);
+	border-color: transparent;
+}
+
+.form-control.plaintext {
+	width : 80%;
+
+}
+
+.col {
+  margin-left: 40px;
+}
+

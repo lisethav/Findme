@@ -97,7 +97,7 @@ angular.module("application").controller("controller_register", function($scope,
 		  $scope.txt_err_register = response.data.message;
 		  return;
 	  }
-	  window.location.href="reports";
+	  window.location.href="home";
     });
 
 

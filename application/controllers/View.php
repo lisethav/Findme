@@ -12,35 +12,34 @@ public function index()
 	die();
 }
 
-// view a specify module, default bugs
-public function page($name_module = "login", $additional_content = null){
+	// view a specify module, default bugs
+	public function page($name_module = "login", $additional_content = null){
 
-}
+	}
 
 	public function module($name_module = 'home')
 	{
-		$single_pages = array("login","logout", "register", "report_pets");
-
+		$single_pages = array("login","logout", "register", "login.php","register.php");
 		// $this->load->model("admin/users_model");
-	
+		
 		if($name_module == "logout"){
 			$this->logout();
 		}
-
+		
 		if($name_module == "login"){
 			$this->redirectIfUserAlreadyLogged();
 		}
 		else{
 			// $this->redirectIfUserIsNotLogged();
 		}
-
-
+		
+		
 		$data["name_module"] = $name_module;
 		$data["access_list"] = [];
 		// $data["access_list"] = $this->users_model->get_user_access_list();
-	
 		
-	
+		
+		
 		// check if the page must be loaded with header and footer or alone
 		if(in_array($name_module, $single_pages)){
 			$this->load->view($name_module, $data);

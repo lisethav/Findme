@@ -13,7 +13,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -21,7 +23,6 @@
   <link href="../../assets/vendor/quill/quill.snow.css" rel="stylesheet">
   <link href="../../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
   <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../../assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
 
   <!-- Vendor JS Files -->
@@ -30,12 +31,29 @@
   <script src="../../assets/vendor/chart.js/chart.min.js"></script>
   <script src="../../assets/vendor/echarts/echarts.min.js"></script>
   <script src="../../assets/vendor/quill/quill.min.js"></script>
-  <script src="../../assets/vendor/simple-datatables/simple-datatables.js"></script>
   <script src="../../assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="../../assets/vendor/php-email-form/validate.js"></script>
 
+
+
   <!-- Template Main CSS File -->
   <link href="../../assets/styles/style.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- <script src="../assets/libraries/jquery.js"></script> -->
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../../assets/scripts/init_angular.js"></script>
+    <script src="../../assets/scripts/main.js"></script>
+
+
 
   <!-- =======================================================
   * Template Name: NiceAdmin - v2.2.2
@@ -45,13 +63,13 @@
   ======================================================== -->
 </head>
 
-<body>
+<body ng-app="application" ng-controller="mainController">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center" style="background-color: #ffe8e8">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="home" class="logo d-flex align-items-center">
       <img src="../../assets/images/logo_findme.png" width="70" height="50" alt="logo">
         <span class="d-none d-lg-block">FindMe</span>
       </a>
@@ -111,8 +129,8 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="profile.php" data-bs-toggle="dropdown">
-            <img src="../../assets/images/profile.png" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Usuario</span>
+            <img src="../../assets/images/isa.jpeg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Isabela</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -170,6 +188,12 @@
         <a class="nav-link collapsed" href="reports.php">
           <i class="bi bi-grid"></i>
           <span>Mascotas perdidas</span>
+        </a>
+
+		<li class="nav-item">
+        <a class="nav-link collapsed" href="report_pets.php">
+          <i class="bi bi-grid"></i>
+          <span>Reportar mascota perdida</span>
         </a>
 
       </li><!-- End Dashboard Nav -->
